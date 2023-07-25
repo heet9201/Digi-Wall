@@ -1,5 +1,5 @@
 import React from 'react';
-import { XMarkIcon } from '@heroicons/react/24/outline';
+import { PhotoIcon, XMarkIcon } from '@heroicons/react/24/outline';
 
 const NewPostModal = ({ showModal, onClose, onFormSubmit, handleInputChange, formData }) => {
     if (!showModal) {
@@ -39,7 +39,9 @@ const NewPostModal = ({ showModal, onClose, onFormSubmit, handleInputChange, for
                         </div>
                         <div className="rounded flex flex-row p-[0.63rem] items-center justify-center gap-[0.5rem] text-[0.88rem] text-text-textsubtle border-[1px] border-solid border-border-bordersubtle">
 
-                            <img className="relative w-[1.19rem] h-[1.19rem] overflow-hidden shrink-0" alt="" src="ImageSquareOutlined.svg" />
+                            <PhotoIcon
+                                className='relative w-[1.19rem] h-[1.19rem] overflow-hidden shrink-0'
+                            />
 
                             <div className="relative w-[1rem] h-[1rem] overflow-hidden shrink-0 hidden" />
                             <label className="cursor-pointer bg-none border-none decoration-none px-4 py-2 text-textsubtle">
