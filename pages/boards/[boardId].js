@@ -31,6 +31,7 @@ const BoardPage = () => {
   const { boardId } = router.query;
   const selectedBoard = postData.find((board) => board.id === parseInt(boardId));
   console.log(selectedBoard);
+  const title = boardData.find((board) => board.id === parseInt(boardId));
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -93,7 +94,10 @@ const BoardPage = () => {
             />
 
             <p className='text-base text-black font-medium'
-            >{selectedBoard === undefined ? '' : selectedBoard.title}</p>
+            >
+              {/* {selectedBoard === undefined ? '' : selectedBoard.title} */}
+              {title === undefined ? '' : title.title}
+            </p>
 
           </div>
           <div className="relative flex flex-row items-center justify-start gap-[5rem]">
