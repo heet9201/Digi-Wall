@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import './modal.css';
+@import './navbar.css';
+
+/* body{
+
+} */
+/* html {
+    background-color: peachpuff;
+    margin: 20px;
+} */
+
+body {
+    @apply leading-[normal] m-0;
+}
+
+*,
+::before,
+::after {
+    border-width: 0;
+}
