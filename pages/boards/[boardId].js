@@ -92,7 +92,7 @@ const BoardPage = () => {
             />
 
             <p className='text-base text-black font-medium'
-            >{selectedBoard.title === null ? null : selectedBoard.title}</p>
+            >{selectedBoard === undefined ? '' : selectedBoard.title}</p>
 
           </div>
           <div className="relative flex flex-row items-center justify-start gap-[5rem]">
@@ -162,7 +162,7 @@ const BoardPage = () => {
               ))
             }
           </div>
-          {selectedBoard.title === '' ?
+          {selectedBoard === undefined ?
             <div className="w-screen h-screen flex flex-col items-center justify-center text-center text-[1rem] text-black font-raleway">
               <div className="absolute flex flex-col items-center justify-center gap-[0.63rem]">
                 <div className="flex flex-col items-center justify-center">
@@ -176,7 +176,7 @@ const BoardPage = () => {
                 </div>
                 <div className="h-[2.88rem] flex flex-col items-center justify-between">
                   <b className="relative text-[1rem] text-center">Nothing here yet</b>
-                  <div className="relative text-[0.88rem] font-raleway">Create your first post by clicking on the '+' button above</div>
+                  <div className="relative text-[0.88rem] font-raleway">Create your first post by clicking on the + button above</div>
                 </div>
               </div>
             </div>
