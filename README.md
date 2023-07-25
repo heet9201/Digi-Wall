@@ -1,34 +1,96 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Digital Wall
 
-## Getting Started
+https://digi-wall-fawn.vercel.app/
 
-First, run the development server:
+The Digital Wall is a web application that allows users to create and manage boards, where they can express their thoughts on common topics easily. Users can share text and pictures by creating posts within the boards. The application is built using Next.js and Tailwind CSS and includes the following functionalities.
+
+# Features
+
+Module 1: Basic Functionalities
+
+```Wall:``` Users can view a list of all boards on the wall. They can create new boards, update existing boards, and delete boards.
+
+```Board:``` Each board displays a collection of posts. Users can create new posts, update existing posts, and delete posts within a specific board.
+
+```Like Posts:``` Users can like posts on the board.
+
+```Search Boards:``` Users can search for boards by title on the wall.
+
+```Search Posts:``` Users can search for posts by title on a particular board.
+
+#### CRUD Operations:
+
+```Create:``` Users can create new boards and posts.
+
+```Read:``` Users can view all boards and posts.
+
+```Update:``` Users can update the title and content of boards and posts.
+
+```Delete:``` Users can delete boards and posts.
+
+
+# Technologies Used
+```Next.js:``` A React framework for building rendered applications.
+
+```Tailwind CSS:``` A utility-first CSS framework for rapid UI development.
+
+# Getting Started
+
+#### 1. Navigate to the project directory:
+
+```bash
+cd digital-wall
+```
+
+#### 2. Install dependencies:
+
+```bash
+npm install
+```
+
+#### 3. Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open your web browser and visit http://localhost:3000 to access the application.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+# Folder Structure
+The project follows the following folder structure:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```components:``` Contains reusable React components used throughout the application.
 
-## Learn More
+```pages:``` Contains Next.js pages representing different routes of the application.
 
-To learn more about Next.js, take a look at the following resources:
+```public:``` Contains static assets like images and the favicon.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```styles:``` Contains global CSS and Tailwind CSS configuration.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+# How to Use
+```Home Page:``` The homepage displays a list of all the boards on the wall. Users can create new boards by clicking the "Create Board" button. Users can also search for boards by title using the search bar.
 
-## Deploy on Vercel
+```Board Page:``` Clicking on a board's title will take the user to the board page. Here, users can view all the posts within the board and create new posts by clicking the "Add New Post" button. Users can also search for posts by title using the search bar. Each post has an option to delete, and users can like posts by clicking the heart icon.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+#### CRUD Operations:
+You can perform CRUD operations as follows:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```Create:``` Click the "Create Board" button to add a new board, and click the "Add New Post" button on a board page to create a new post.
+
+```Read:``` View all boards and posts on their respective pages.
+
+```Update:``` Click the "Edit" button on a board or post to update its title or content.
+
+```Delete:``` Click the "Delete" button on a board or post to delete it.
+
+#### Search:
+
+Users can search boards by title in the wall/Homepage, and posts by title on the particular board.
+
+# Note
+
+The data for this application resides on the frontend, so any changes made will not persist after the page is refreshed. It is intended for demonstration purposes only.
+
+
+# Author
+Heet Dedakiya
